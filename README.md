@@ -4,7 +4,7 @@
  
 ## Foundry VTT Docker
 
-This repository contains the source 'Dockerfile' and scripts for [https://hub.docker.com/repository/docker/dumaurier/foundry-docker/general] on Docker Hub.
+This repository contains the source 'Dockerfile' and scripts for [dumaurier/foundry-docker](https://hub.docker.com/repository/docker/dumaurier/foundry-docker/general) on Docker Hub.
 
 As well as the various scripts and files required for composing the docker container, I have included an example docker-compose.yml file, that can be used as a starting point, for getting your own server up and running quickly.
 
