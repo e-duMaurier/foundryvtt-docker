@@ -1,0 +1,10 @@
+# Ignore the zip file
+foundryvtt*.zip
+
+# IDE
+.vscode/
+
+# Docker Compose
+docker-compose.local.yaml
+
+README.old
