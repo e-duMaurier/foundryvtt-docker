@@ -7,4 +7,4 @@ foundryvtt*.zip
 # Docker Compose
 docker-compose.local.yaml
 
-README.old
+readme.old
