@@ -1,0 +1,13 @@
+services:
+  fvtt: # If using multiple instances, or users, change this for each instance/user "fvtt-user1, fvtt-user2, fvtt-dnd5e, fvtt-pf2e etc."
+    container_name: fvtt # Keeping this the same as the name above, will help keep it easy to identify
+    hostname: fvtt # Matching this with the container name above, can help if using proxies and portianer for managing urls
+    image: dumaurier/foundry-docker:latest
+    ports:
+      - "30000:30000" # If running multiple instances at the same time, the left value needs to be unique
+    volumes:
+      - /your/foundry/instance/system/userdata:/data/foundryvtt
+      - /your/foundry/instance/system/appdata:/opy/founndryvtt/resources/app
+      - /your/foundry/instance/system:/data/foundryvtt:/host_files
+    user: "${UID}:${GID}" # used to have the container run as the host user
+    restart: unless-stopped
