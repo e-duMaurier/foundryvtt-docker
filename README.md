@@ -64,6 +64,20 @@ Multiple Users/Single Instances
 |	|	|── appdata/
 ```
 
+Multiple Users/Single Instances
+
+```tree
+/home/
+├── user1/
+│   ├── foundry/
+|	|	|── userdata/
+|	|	|── appdata/
+├── user2/
+│   ├── foundry/
+|	|	|── userdata/
+|	|	|── appdata/
+```
+
 ### Step 2 - Download the docker-compose.yml file
 
 Once the file is downloaded, copy or move it to the required foundry directory.
@@ -111,16 +125,16 @@ Set the `foundry` , the `appdata` and the `userdata` directories under `volumes`
 
 ```yaml
 - /your/foundry/instance/system/userdata:/data/foundryvtt
-- /your/foundry/instance/system/appdata:/opy/founndryvtt/resources/app
-- /your/foundry/instance/system:/data/foundryvtt:/host_files
+- /your/foundry/instance/system/appdata:/opt/foundryvtt/resources/app
+- /your/foundry/instance/system:/host_files
 ```
 
 **Example**
 
 ```yaml
 /home/user/foundry/userdata:/data/foundryvtt
-/home/user/foundry/appdata:/opy/founndryvtt/resources/app
-/home/user/foundry:/data/foundryvtt:/host_files
+/home/user/foundry/appdata:/opt/foundryvtt/resources/app
+/home/user/foundry:/host_files
 ```
 
 #### Set the Ports

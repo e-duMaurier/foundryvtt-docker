@@ -7,7 +7,7 @@ services:
       - "30000:30000" # If running multiple instances at the same time, the left value needs to be unique
     volumes:
       - /your/foundry/instance/system/userdata:/data/foundryvtt
-      - /your/foundry/instance/system/appdata:/opy/founndryvtt/resources/app
-      - /your/foundry/instance/system:/data/foundryvtt:/host_files
+      - /your/foundry/instance/system/appdata:/opt/foundryvtt/resources/app
+      - /your/foundry/instance/system:/host_files
     user: "${UID}:${GID}" # used to have the container run as the host user
     restart: unless-stopped
