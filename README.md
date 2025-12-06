@@ -153,7 +153,7 @@ When changing the port, only alter the value on the left, and ensure this is not
 
 ```yaml
 ports:
-  - "300100:30000"
+  - "30001:30000"
 ```
 
 ### Step 4 - Download Foundry VTT
